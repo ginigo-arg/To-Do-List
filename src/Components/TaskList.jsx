@@ -34,7 +34,7 @@ const TaskList = (props) => {
       {list.length ? (
         <p>
           <button onClick={onClickRemoveItem}
-          className="bg-sky-500/75 rounded border-indigo-600 w-full h-12 text-white font-bold"
+          className="bg-sky-300 hover:bg-sky-500 rounded border-indigo-600 w-full h-12 text-white font-bold"
           >Eliminar Realizados</button>
         </p>
       ): null}

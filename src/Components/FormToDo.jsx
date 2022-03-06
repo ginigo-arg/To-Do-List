@@ -29,12 +29,12 @@ const FormToDo = (props) => {
         setDescripcion(e.target.value)
       }}
       className="border rounded-md rounded-r-none w-8/12 shadow
-      px-3 py-2 focus:outline-none focus:border-sky-500"
+      px-3 py-2 focus:outline-none focus:border-slate-200 border-r-0 dark:bg-slate-700 dark:border border-slate-500 dark:text-slate-50 transition-all ease-in-out duration-700"
       >
       </input>
       <button
       disabled={descripcion ? "" : "disable"}
-      className="border rounded-md rounded-l-none bg-sky-500/75 text-white font-semibold p-1 w-3/12 shadow rounded-lg hover:bg-sky-500/100 disabled:bg-stone-300"
+      className="border rounded-l-none bg-slate-800 hover:bg-slate-400 text-white font-semibold p-2 w-3/12 shadow rounded-lg hover:bg-slate-500/100 disabled:bg-slate-400 disabled:cursor-not-allowed active:shadow-none transition-all ease-in-out duration-700"
       >Agregar</button>
     </form>
     </>

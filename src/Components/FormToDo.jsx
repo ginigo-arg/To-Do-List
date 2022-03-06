@@ -6,34 +6,35 @@ const FormToDo = (props) => {
   const {handleAddItem} = props
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(descripcion)
     handleAddItem({
       done: false,
       id:(+new Date()).toString(),
       descripcion
     })
     setDescripcion("")
+
   }
 
 
   return (
     <>
-    <div>FormToDo</div>
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}
+    className='w-full flex flex-row justify-center my-4 mb-8'>
       <input
       type="text"
       name=''
       value={descripcion}
-      placeholder="Ingresa tu tarea"
+      placeholder="Ingresa una tarea"
       onChange={(e)=>{
         setDescripcion(e.target.value)
       }}
-      className="border rounded-md border-black bg-gray-200"
+      className="border rounded-md rounded-r-none w-8/12 shadow
+      px-3 py-2 focus:outline-none focus:border-sky-500"
       >
       </input>
       <button
       disabled={descripcion ? "" : "disable"}
-      className="bg-gray-900 text-white p-2"
+      className="border rounded-md rounded-l-none bg-sky-500/75 text-white font-semibold p-1 w-3/12 shadow rounded-lg hover:bg-sky-500/100 disabled:bg-stone-300"
       >Agregar</button>
     </form>
     </>

@@ -29,13 +29,13 @@ const TaskList = (props) => {
 
   return (
     <>
-    <div className='w-full my-2 text-center'>
+    <div className='w-full my-2'>
       {list.length ? check : "No hay lista"}
       {list.length ? (
         <p>
           <button onClick={onClickRemoveItem}
           className="bg-sky-500/75 rounded border-indigo-600 w-full h-12 text-white font-bold"
-          >Delete All One</button>
+          >Eliminar Realizados</button>
         </p>
       ): null}
     </div>

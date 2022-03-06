@@ -24,7 +24,7 @@ const FormToDo = (props) => {
       type="text"
       name=''
       value={descripcion}
-      placeholder="Ingresa una tarea"
+      placeholder="Agrega una tarea"
       onChange={(e)=>{
         setDescripcion(e.target.value)
       }}

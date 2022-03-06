@@ -14,7 +14,7 @@ const Container = () => {
     <>
     <div className='w-9/12 flex flex-col justify-center items-center px-4'
     >
-      <h2 className='text-2xl font-bold'>Notas</h2>
+      <h2 className='text-2xl font-bold text-'>Notas</h2>
     <FormToDo handleAddItem={handleAddItem}/>
     <TaskList list={list} setList={setList}/>
     </div>

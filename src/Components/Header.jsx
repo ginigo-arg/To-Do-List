@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
       <>
-      <div className=' flex flex-row justify-center mb-3'>
+      <div className=' flex flex-row justify-center mb-3 mt-5'>
         <div className=' rounded-md row flex flex-row w-full justify-between items-center px-4 py-4 shadow'>
             <div className='flex flex-row items-center'>
                 {isDark ? (<img src={DarkLogo} alt='logo'

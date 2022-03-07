@@ -27,7 +27,7 @@ const TaskList = (props) => {
     
   ))
 
-  let defaultValues = initials.map(item => (
+  const defaultValues = initials.map(item => (
     <CheckBox key={item.id} data={item} onChange={onChangeStatus} />
   ))
 

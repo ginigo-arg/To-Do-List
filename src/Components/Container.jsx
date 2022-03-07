@@ -13,7 +13,7 @@ const Container = () => {
 
   return (
     <>
-    <div className='flex flex-col justify-center items-center px-4 w-full'
+    <div className='flex flex-col justify-center items-center px-4 h-full mb-10 w-10/12 sm:w-10/12 md:w-8/12 lg-8/12'
     >
       <h2 className='text-2xl font-bold dark:text-sky-50'>Notas</h2>
     <FormToDo handleAddItem={handleAddItem}/>

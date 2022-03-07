@@ -1,17 +1,22 @@
 import "./App.css";
 import Container from "./Components/Container";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 
 function App() {
   return (
     <>
-      <div className="dark:bg-slate-700 transition-all ease-in-out duration-700 h-screen w-screen flex flex-column justify-center">
-        <div className="sm:w-max md:w-5/6 lg:w-8/12">
+      <div className="dark:bg-slate-700 transition-all ease-in-out duration-700  h-screen w-screen overflow-auto">
+        <header>
           <Header />
-          <div className="flex flex-row justify-center items-center mt-20">
-            <Container />
-          </div>
-        </div>
+        </header>
+
+        <secction className="flex flex-row justify-center items-center mt-20">
+          <Container />
+        </secction>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   );

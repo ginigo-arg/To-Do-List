@@ -16,8 +16,8 @@ const Header = () => {
 
   return (
       <>
-      <div className=' flex flex-row justify-center mb-3 mt-5'>
-        <div className=' rounded-md row flex flex-row w-full justify-between items-center px-4 py-4 shadow'>
+      <div className=' flex flex-row justify-center mb-3 mt-5 '>
+        <div className=' rounded-md row flex flex-row justify-between items-center px-4 py-4 shadow w-10/12 sm:w-10/12 md:w-8/12 lg-8/12'>
             <div className='flex flex-row items-center'>
                 {isDark ? (<img src={DarkLogo} alt='logo'
                 className='w-10'/>) : (<img src={LightLogo} alt='logo'
@@ -32,7 +32,7 @@ const Header = () => {
                         </a>
                         </li> 
                         { isDark ?
-                        (<button onClick={onClick} className='bg-slate-600 p-1 rounded'><img src={Moon} alt="" /></button>) : (<button onClick={onClick} ><img src={Sun} alt="" /></button>) 
+                        (<button onClick={onClick} className='bg-slate-600 p-1 rounded'><img src={Moon} alt="" /></button>) : (<button onClick={onClick} className="bg-transparent p-1 rounded" ><img src={Sun} alt="" /></button>) 
 
                         }         
                 </ul>
